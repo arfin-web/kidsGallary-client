@@ -47,8 +47,8 @@ const Purchase = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Product added');
-                    history.push('/pay')
+                    // alert('Product added');
+                    // history.push('/pay')
                 }
             })
         e.preventDefault();
@@ -101,7 +101,9 @@ const Purchase = () => {
                                         <input ref={statusRef} value="Pending" type="text" className="form-control" id="inputStatus" autoComplete="off" />
                                     </div>
                                     <div className="col-12">
-                                        <input type="submit" className="btn btn-primary bg-gradient" value="Purchase" />
+                                        <button type="submit" className="btn btn-primary bg-gradient">
+                                            <a href='https://paycube.vercel.app/processpayment' target="_blank" className='text-white text-decoration-none'>Purchase</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
