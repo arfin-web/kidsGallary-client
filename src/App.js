@@ -20,6 +20,7 @@ import Footer from './Pages/Footer/Footer';
 import Manageproduct from './Pages/Manageproduct/Manageproduct';
 import Notfound from './Pages/Notfound/Notfound';
 import Pay from './Pages/Pay/Pay';
+import Paymennt from './Pages/Paymennt';
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
             </Privateroute>
             <Privateroute path="/pay">
               <Pay></Pay>
+            </Privateroute>
+            <Privateroute path="/payment">
+              <Paymennt></Paymennt>
             </Privateroute>
             <Adminroute path="/makeadmin">
               <Makeadmin></Makeadmin>

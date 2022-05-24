@@ -48,7 +48,7 @@ const Purchase = () => {
             .then(data => {
                 if (data.insertedId) {
                     // alert('Product added');
-                    // history.push('/pay')
+                    history.push('/payment')
                 }
             })
         e.preventDefault();
@@ -102,7 +102,7 @@ const Purchase = () => {
                                     </div>
                                     <div className="col-12">
                                         <button type="submit" className="btn btn-primary bg-gradient">
-                                            <a href='https://paycube.vercel.app/processpayment' target="_blank" className='text-white text-decoration-none'>Purchase</a>
+                                            Purchase
                                         </button>
                                     </div>
                                 </div>
